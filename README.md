@@ -82,6 +82,7 @@ print(df_original['satisfaction'].value_counts(normalize = True)*100)
 We can see that 54.75% are satisfied and 45.26% are not satisfied.
 
  **Missing Values**
+ 
 Let's check if the dataset has missing values.
 
 ```
@@ -104,6 +105,7 @@ df_original['Inflight entertainment'] = df_original['Inflight entertainment'].as
 df_original['satisfaction'] = OneHotEncoder(drop='first', sparse=False).fit_transform(df_original[['satisfaction']])
 ```
 **Splitting Data**
+
 Now we split the data into train and test. We leave 70% for training and 30% for splitting. We create X data frame and y.
 
 ```
@@ -111,7 +113,8 @@ X = df_original[['Inflight entertainment']]
 y = df_original['satisfaction']
 X_train,X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 42)
 ```
-##Step 3: Model Building
+## Step 3: Model Building
+
 **Fitting Logistic Regression**
 
 Now that the data is ready, let's fit the model
@@ -131,7 +134,7 @@ For each one-unit increase in inflight-entertainment rating,
 the log-odds of a customer being satisfied increase by 1.0072.
 Converting to odds → 
 ```
-e^{1.0072} \approx 2.74$
+e^{1.0072} \approx 2.74
 ```
 This means the odds of satisfaction are 2.7 times higher for every additional point in entertainment score.
 Intercept = -3.2351:
