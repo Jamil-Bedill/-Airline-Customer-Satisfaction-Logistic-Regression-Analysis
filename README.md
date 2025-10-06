@@ -1,4 +1,4 @@
-# Airline Customer Satisfaction – Logistic Regression Analysis ✈️
+# Airline Customer Satisfaction – Logistic Regression Analysis 
 
 ## Overview
 This project demonstrates **Binomial Logistic Regression** using a real-world airline passenger dataset. The analysis explores how *inflight entertainment quality* affects *customer satisfaction*.  
