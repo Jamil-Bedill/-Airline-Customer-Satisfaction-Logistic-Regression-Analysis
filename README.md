@@ -28,7 +28,6 @@ It forms part of the **Google Advanced Data Analytics** programme and showcases 
 - Build and evaluate a **binomial logistic regression model** using scikit-learn.  
 - Interpret and visualise results to extract actionable insights.
 
-
 ## Step 1: Imports
 
 ```python
@@ -195,7 +194,7 @@ disp.plot(values_format='d')
 
 <img width="373" height="265" alt="image" src="https://github.com/user-attachments/assets/92cf4123-8012-4996-9969-19aaa49772c7" />
 
-```
+
 ### Confusion Matrix Summary
 
 | Metric | Description | Count |
@@ -204,7 +203,7 @@ disp.plot(values_format='d')
 | **True Negative (TN)** | Model correctly predicted class **0** when the actual value was **0**. | 13,714 |
 | **False Positive (FP)** | Model incorrectly predicted class **1** when the actual value was **0**. | 3,925 |
 | **False Negative (FN)** | Model incorrectly predicted class **0** when the actual value was **1**. | 3,785 |
-```
+
 **Interpretation:**  
 The model performs well, with a high number of correct predictions (TP and TN) compared to incorrect ones (FP and FN). This indicates strong predictive accuracy for both classes, though there’s slight room for improvement in reducing misclassifications.
 
